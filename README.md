@@ -51,7 +51,7 @@ Important security options:
 Reminder, you set the options when you res.cookie(), it is the third parameter.  First is name, second is value.
 
 Common options:
-- httpOnly(Prevents JS from reading the cookie)
-- secure(Only send over https)
+- httpOnly(Prevents JS from reading the cookie) 
+- secure(Only send over https) (will not work in localhost unless its using https.  So good practice to set a dev environmental variable to base it off on)
 - maxAge(milliseconds)
-- sameSite(CSRF protection)
+- sameSite(CSRF protection) - must be a string, and the options are 'strict', 'lax', 'none'
