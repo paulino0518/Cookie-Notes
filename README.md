@@ -45,4 +45,7 @@ app.get('/set-cookie', (req, res) => {
 Important security options:
 - Set httpOnly flag (helps with xss)
 - You can also use signed cookies as it is a feature with cookie-parser.  Signed cookies can be accesed with req.signedCookies
+- Options is an object 
+- secret is optional but will not parse signed cookies if no secret is passed
 
+Reminder, you set the options when you res.cookie(), it is the third parameter.  First is name, second is value.
