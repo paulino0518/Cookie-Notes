@@ -1,4 +1,8 @@
 # Cookie-Notes
+Install:
+```
+npm i cookie-parser
+```
 Cookies are stored in the request header in "cookies";
 
 By default we cannot parse the information.  So in express and other programs you will need a middleware.
@@ -37,3 +41,8 @@ app.get('/set-cookie', (req, res) => {
     res.send('Cookie set successfully');
 });
 ```
+
+Important security options:
+- Set httpOnly flag (helps with xss)
+- You can also use signed cookies as it is a feature with cookie-parser.  Signed cookies can be accesed with req.signedCookies
+
