@@ -26,3 +26,6 @@ app.get('/getcookie', (req, res) => {
 ```
 
 To set the cookie value set the value as a response.  Like this.
+```
+// res.cookies('cookieName', 'value', {options})
+```
