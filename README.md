@@ -8,7 +8,7 @@ For express, use cookie-parser.  It makes the cookies header available under req
 Cool stuff
 
 After installing it, use it in your server.
-'''
+```
 import cookieParser from 'cookie-parser);
 app.use(cookieParser())
-'''
+```
