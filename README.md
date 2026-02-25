@@ -29,3 +29,11 @@ To set the cookie value set the value as a response.  Like this.
 ```
 // res.cookies('cookieName', 'value', {options})
 ```
+
+Here is an example:
+```
+app.get('/set-cookie', (req, res) => {
+    res.cookie('myCookie', 'cookie_value', { maxAge: 3600000 }); // Cookie expires in 1 hour
+    res.send('Cookie set successfully');
+});
+```
