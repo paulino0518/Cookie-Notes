@@ -49,3 +49,9 @@ Important security options:
 - secret is optional but will not parse signed cookies if no secret is passed
 
 Reminder, you set the options when you res.cookie(), it is the third parameter.  First is name, second is value.
+
+Common options:
+- httpOnly(Prevents JS from reading the cookie)
+- secure(Only send over https)
+- maxAge(milliseconds)
+- sameSite(CSRF protection)
