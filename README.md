@@ -1,4 +1,8 @@
 # Cookie-Notes
+UPDATE:
+- req.cookies is an object
+
+
 Install:
 ```
 npm i cookie-parser
